@@ -9,44 +9,44 @@
 <body>
   <div class="shell">
     <header class="topbar">
-      <div class="brand"><span class="brand-mark">F/</span><span>FIELDNOTES <strong>AI</strong></span></div>
-      <div class="top-right"><span class="live-dot"></span> LOCAL MODEL <span class="separator">/</span> <span id="model">QWEN3:8B</span></div>
+      <div class="brand"><span class="brand-mark">F.</span><span>Fieldnotes <strong>AI</strong></span></div>
+      <div class="top-right"><span class="live-dot"></span> PRIVATE, LOCAL INTELLIGENCE <span class="separator">/</span> <span id="model">QWEN3:8B</span></div>
     </header>
     <main>
       <section class="hero">
-        <div class="eyebrow">OPERATIONS INTELLIGENCE <span>—</span> EVIDENCE FIRST</div>
-        <h1>Every asset has a story.<br><em>Find the part that matters.</em></h1>
-        <p>Ask across inspections, work orders, manuals and technician notes. Get cited answers and see where records disagree.</p>
-        <div class="hero-meta"><span>01 / ASSET OVERVIEW</span><span>FICTIONAL DEMO DATA</span></div>
+        <div class="eyebrow">FIELD INTELLIGENCE <span>·</span> AN EVIDENCE FIRST WORKSPACE</div>
+        <h1>Make every decision<br><em>traceable.</em></h1>
+        <p>Bring inspection reports, work orders and field notes into one clear view. Ask a question, inspect the sources, and see where the record disagrees.</p>
+        <div class="hero-meta"><span>01 / OPERATIONAL OVERVIEW</span><span>FICTIONAL DEMONSTRATION DATA</span></div>
       </section>
 
       <section class="dashboard" aria-label="Asset overview">
         <div class="panel assets-panel">
-          <div class="panel-heading"><span>MONITORED ASSETS</span><span id="asset-count">—</span></div>
+          <div class="panel-heading"><span>Monitored assets</span><span id="asset-count">—</span></div>
           <div id="assets" class="asset-list"></div>
         </div>
         <div class="panel signals-panel">
-          <div class="panel-heading"><span>SIGNAL DISTRIBUTION</span><span>BY RECORD TYPE</span></div>
+          <div class="panel-heading"><span>Records by source</span><span>DOCUMENT MIX</span></div>
           <div id="chart" class="chart"></div>
           <div class="chart-footer"><span id="record-count">— RECORDS</span><span>ALL SOURCES TRACEABLE</span></div>
         </div>
         <div class="panel conflicts-panel">
-          <div class="panel-heading"><span>CONFLICT WATCH</span><span id="conflict-count">—</span></div>
+          <div class="panel-heading"><span>Needs attention</span><span id="conflict-count">—</span></div>
           <div id="conflicts" class="conflicts"></div>
         </div>
       </section>
 
       <section class="workspace">
-        <div class="workspace-heading"><div><span class="eyebrow">02 / ASK THE RECORD</span><h2>Investigate with context.</h2></div><span class="hint">CITED ANSWERS · HUMAN REVIEW REQUIRED</span></div>
+        <div class="workspace-heading"><div><span class="eyebrow">02 / ASK THE RECORD</span><h2>Answers with a paper trail.</h2></div><span class="hint">CITED ANSWERS · HUMAN REVIEW REQUIRED</span></div>
         <form id="ask-form" class="ask-form">
           <label for="question">QUESTION</label>
-          <div class="input-row"><input id="question" name="question" maxlength="500" placeholder="What is happening with valve V-2 on Aster 17?" required><button type="submit" id="submit">ASK FIELDNOTES <span>↗</span></button></div>
+          <div class="input-row"><input id="question" name="question" maxlength="500" placeholder="What is happening with valve V-2 on Aster 17?" required><button type="submit" id="submit">Ask Fieldnotes <span>↗</span></button></div>
         </form>
         <div class="suggestions"><span>TRY</span><button type="button" data-question="What is happening with valve V-2 on Aster 17?">Valve V-2 status ↗</button><button type="button" data-question="Are there conflicting pressure readings for Aster 17?">Pressure conflict ↗</button><button type="button" data-question="What maintenance follow-up is needed for Pump P03?">Pump P03 follow-up ↗</button></div>
-        <div id="answer" class="answer" aria-live="polite"><div class="empty-state"><span class="empty-glyph">↗</span><span>Start with a question. Fieldnotes will show the records behind its answer.</span></div></div>
+        <div id="answer" class="answer" aria-live="polite"><div class="empty-state"><span class="empty-glyph">↗</span><span>Start with a question. Every answer is paired with the records behind it.</span></div></div>
       </section>
 
-      <section class="records-section"><div class="workspace-heading"><div><span class="eyebrow">03 / SOURCE LEDGER</span><h2>Trace every claim.</h2></div><span class="hint">ORIGINAL RECORD LABELS</span></div><div id="records" class="record-list"></div></section>
+      <section class="records-section"><div class="workspace-heading"><div><span class="eyebrow">03 / SOURCE LEDGER</span><h2>The underlying record.</h2></div><span class="hint">ORIGINAL RECORD LABELS</span></div><div id="records" class="record-list"></div></section>
     </main>
     <footer><span>FIELDNOTES AI / HACKTOBERFEST HACK DAY PUNE 2026</span><span>DEMO DATA ONLY · VERIFY OPERATIONAL DECISIONS</span></footer>
   </div>

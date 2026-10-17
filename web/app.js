@@ -54,7 +54,7 @@ $('#ask-form').addEventListener('submit', async event => {
     const response = await fetch('/api/ask', {method: 'POST', headers: {'content-type': 'application/json'}, body: JSON.stringify({question})});
     const body = await response.json(); if (!response.ok) throw new Error(body.error ?? 'Request failed.'); renderAnswer(body);
   } catch (error) { $('#answer').replaceChildren(make('p', 'error', `${error.message} Start Ollama and confirm the selected model is installed.`)); }
-  finally { button.disabled = false; button.innerHTML = 'ASK FIELDNOTES <span>↗</span>'; }
+  finally { button.disabled = false; button.innerHTML = 'Ask Fieldnotes <span>↗</span>'; }
 });
 for (const button of document.querySelectorAll('[data-question]')) button.addEventListener('click', () => { $('#question').value = button.dataset.question; $('#ask-form').requestSubmit(); });
 fetch('/api/overview').then(r => r.json()).then(renderOverview).catch(error => { $('#assets').textContent = `Could not load data: ${error.message}`; });
