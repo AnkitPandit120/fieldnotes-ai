@@ -1,0 +1,14 @@
+{
+  "name": "fieldnotes-ai",
+  "version": "0.1.0",
+  "description": "An evidence-first asset intelligence copilot for inspection and maintenance records",
+  "type": "module",
+  "bin": {"fieldnotes": "./bin/fieldnotes.js"},
+  "exports": "./src/index.js",
+  "files": ["bin", "src", "web", "examples", "README.md", "LICENSE"],
+  "scripts": {
+    "demo": "node bin/fieldnotes.js serve --data examples/sample-records.json"
+  },
+  "engines": {"node": ">=20"},
+  "license": "MIT"
+}

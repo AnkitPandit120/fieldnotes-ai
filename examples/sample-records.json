@@ -1,0 +1,17 @@
+{
+  "assets": [
+    {"id":"WELL-A17","name":"Aster 17","site":"North Ridge","kind":"oil well"},
+    {"id":"WELL-B04","name":"Birch 04","site":"East Field","kind":"oil well"},
+    {"id":"PUMP-P03","name":"Pump P03","site":"North Ridge","kind":"pump"}
+  ],
+  "records": [
+    {"id":"INS-101","asset_id":"WELL-A17","type":"inspection","date":"2026-10-14","title":"Weekly pressure inspection","text":"Tubing pressure 182 bar. Minor seal seep at valve V-2. Follow-up inspection recommended within 48 hours.","measurements":{"tubing_pressure_bar":182},"source":"inspection/INS-101.pdf"},
+    {"id":"OPS-102","asset_id":"WELL-A17","type":"operations","date":"2026-10-14","title":"Control-room shift log","text":"Tubing pressure 147 bar recorded at the same 09:00 shift. Operator reports intermittent V-2 alarm.","measurements":{"tubing_pressure_bar":147},"source":"operations/shift-14-oct.csv"},
+    {"id":"MNT-103","asset_id":"WELL-A17","type":"maintenance","date":"2026-10-15","title":"Valve V-2 work order","text":"Work order opened to inspect V-2 seal. Status: pending parts. No repair completion recorded.","source":"maintenance/WO-103.json"},
+    {"id":"MAN-104","asset_id":"WELL-A17","type":"manual","date":"2026-10-01","title":"Aster 17 operating guide","text":"If V-2 leakage is observed, isolate and inspect the valve before returning to normal service. Escalate inconsistent pressure readings to the shift supervisor.","source":"manuals/aster-17-guide.pdf"},
+    {"id":"FB-105","asset_id":"WELL-A17","type":"feedback","date":"2026-10-15","title":"Technician observation","text":"Technician noticed a faint hiss near V-2. Could not verify whether the seal leak worsened because access was restricted.","source":"feedback/technician-15-oct.txt"},
+    {"id":"INS-201","asset_id":"WELL-B04","type":"inspection","date":"2026-10-13","title":"Birch 04 inspection","text":"No visible leaks. Tubing pressure 165 bar and stable. Next routine inspection due in seven days.","measurements":{"tubing_pressure_bar":165},"source":"inspection/INS-201.pdf"},
+    {"id":"MNT-301","asset_id":"PUMP-P03","type":"maintenance","date":"2026-10-12","title":"Pump vibration follow-up","text":"Bearing vibration rose to 8.2 mm/s. Lubrication completed, but repeat vibration check has not been logged.","measurements":{"vibration_mm_s":8.2},"source":"maintenance/WO-301.json"},
+    {"id":"MAN-302","asset_id":"PUMP-P03","type":"manual","date":"2026-10-01","title":"Pump P03 maintenance guide","text":"After bearing lubrication, record a repeat vibration measurement before closing the work order.","source":"manuals/pump-p03-guide.pdf"}
+  ]
+}
